@@ -55,6 +55,7 @@
     };
 
     virtualisation.docker.enable = true;
+    virtualisation.docker.package = pkgs.docker_29;
 
     services = {
         openssh.enable = true;
@@ -223,8 +224,8 @@
             dconf-editor
             yubikey-manager
             yubikey-personalization
-            openrazer-daemon
-            polychromatic # frontend for openrazer
+            # openrazer-daemon
+            # polychromatic # frontend for openrazer
         ];
     };
 
@@ -242,6 +243,6 @@
         graphics = {
             enable = true;
         };
-        openrazer.enable = true;
+        # openrazer.enable = true;
     };
 }
